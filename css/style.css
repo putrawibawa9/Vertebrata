@@ -1,0 +1,8 @@
+.admin-body {
+  background-image: url('../img/bg.png');
+  background-repeat: repeat;
+}
+.wrap-text {
+  word-wrap: break-word;
+  max-width: 200px; /* Adjust the maximum width as needed */
+}
