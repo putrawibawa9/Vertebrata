@@ -1,7 +1,7 @@
 <?php
 
 
-$conn =mysqli_connect("localhost","root","","olahraga");
+$conn =mysqli_connect("localhost","root","","vertebrata");
 
 
 function query($query){
@@ -487,5 +487,47 @@ function regristrasiAdmin($data){
 
   //tambah user baru ke database
   mysqli_query($conn,"INSERT INTO admin VALUES('','$username','$password')");
+  return mysqli_affected_rows($conn);
+}
+
+
+
+
+
+//Untuk joki
+
+function tambahKategori($data) {
+  global $conn;
+  $nama_kategori = $data['nama_kategori'];
+
+//make the insert syntax
+$query = "INSERT INTO kategori VALUES 
+          ('','$nama_kategori')";
+
+mysqli_query($conn,$query);
+return mysqli_affected_rows($conn);
+}
+
+
+function ubahKategori($data){
+  global $conn;
+  $id_kategori = $data['id_kategori'];
+  $nama_kategori = $data['nama_kategori'];
+
+
+//make the insert syntax
+$query = "UPDATE kategori SET
+        nama_kategori = '$nama_kategori'
+        WHERE id_kategori = $id_kategori
+        ";
+
+mysqli_query($conn,$query);
+return mysqli_affected_rows($conn);
+}
+
+
+function hapusKategori($id_kategori){
+  global $conn;
+  mysqli_query($conn,"DELETE FROM kategori WHERE id_kategori = $id_kategori");
   return mysqli_affected_rows($conn);
 }

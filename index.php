@@ -8,7 +8,7 @@ session_start();
 //     exit;
 // }
 
-include_once "admin/functions/functions.php";
+include_once "functions/functions.php";
 
 if(isset($_POST['login'])){
 
@@ -27,7 +27,7 @@ if(isset($_POST['login'])){
 
     // $_SESSION['is_auth'] = true;
     $_SESSION['auth'] = true;
-    header("Location: user/index.php");
+    header("Location: admins/index.php");
     exit;
    }
    }
