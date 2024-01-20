@@ -6,3 +6,8 @@
 </div>
 
 <?php require_once "../admin/footer.php" ?>
+
+<script type="text/javascript">
+  $('.nav-link').removeClass('active');
+  $('.menu-home').addClass('active');
+</script>

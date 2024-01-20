@@ -1,17 +1,17 @@
 <?php
 
 require_once '../functions/functions.php';
-$id_kategori = $_GET['id_kategori'];
+$id_binatang = $_GET['id_binatang'];
 
-if (hapusKategori($id_kategori)>0){
+if (hapusBinatang($id_binatang)>0){
     echo "<script>
             alert('data berhasil dihapus');
-            document.location.href = 'kategori.php';
+            document.location.href = 'binatang.php';
       </script>";
 }else{
   echo "  <script>
             alert('data gagal dihapus');
-            document.location.href = 'kategori.php';
+            document.location.href = 'binatang.php';
             </script>";
 }
 

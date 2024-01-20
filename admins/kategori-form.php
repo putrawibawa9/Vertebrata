@@ -50,3 +50,7 @@ if(isset($_POST['submit'])){
 
 
 <?php require_once '../admin/footer.php';?>
+<script type="text/javascript">
+  $('.nav-link').removeClass('active');
+  $('.menu-category').addClass('active');
+</script>

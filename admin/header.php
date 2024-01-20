@@ -14,15 +14,15 @@
         <div class="col-12">
         <nav class="navbar navbar-expand-lg bg-white">
   <div class="container-fluid">
-    <a class="navbar-brand " href="#">Navbar</a>
+    <a class="navbar-brand " href="http://localhost/vertebrataNew/admins/index.php">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="http://localhost/vertebrataNew/user/index.php">Home</a>
-        <a class="nav-link" href="http://localhost/vertebrataNew/admins/kategori.php">Category</a>
-        <a class="nav-link" href="http://localhost/vertebrataNew/admins/binatang.php">Binatang</a>
+        <a class="nav-link menu-home" aria-current="page" href="http://localhost/vertebrataNew/admins/index.php">Home</a>
+        <a class="nav-link menu-category" href="http://localhost/vertebrataNew/admins/kategori.php">Category</a>
+        <a class="nav-link menu-binatang" href="http://localhost/vertebrataNew/admins/binatang.php">Binatang</a>
         <a class="nav-link" href="http://localhost/vertebrataNew/admin/logout.php">logout</a>
       </div>
     </div>

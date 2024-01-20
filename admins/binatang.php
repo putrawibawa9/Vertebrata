@@ -36,7 +36,7 @@ $binatang = query("SELECT * FROM binatang JOIN kategori ON binatang.id_kategori 
                   <td ><?=$row['nama_kategori']?></td>
                   <td ><?=$row['nama_binatang']?></td>
                   <td ><?=$row['keterangan_binatang']?></td>
-                  <td ><?=$row['gambar']?></td>
+                  <td class="text-center" > <img src="../img/<?=$row['gambar']?>" width="100px"></td>
                    <td>
                     <a  href="binatang-form.php?id_binatang=<?=$row['id_binatang'];?>" class="btn btn-warning btn-sm ">Edit</a>
                     <a href="binatang-delete.php?id_binatang=<?=$row['id_binatang'];?>" class="btn btn-danger btn-sm " onclick="return confirm('yakin?');">Delete</a>
@@ -55,4 +55,10 @@ $binatang = query("SELECT * FROM binatang JOIN kategori ON binatang.id_kategori 
 
 
 <?php require_once '../admin/footer.php';?>
+
+<?php require_once '../admin/footer.php';?>
+<script type="text/javascript">
+  $('.nav-link').removeClass('active');
+  $('.menu-binatang').addClass('active');
+</script>
  

@@ -50,3 +50,7 @@ $kategori = query("SELECT * FROM kategori");
 
 <?php require_once '../admin/footer.php';?>
  
+<script type="text/javascript">
+  $('.nav-link').removeClass('active');
+  $('.menu-category').addClass('active');
+</script>

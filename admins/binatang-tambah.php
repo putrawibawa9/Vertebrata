@@ -15,17 +15,17 @@ if(isset($_POST['submit'])){
 
     
     //check the progress
-    if (tambahTeam($_POST)>0){
+    if (tambahBinatang($_POST)>0){
         echo "
             <script>
             alert('data berhasil ditambah');
-            document.location.href = 'team.php';
+            document.location.href = 'binatang.php';
             </script>
         ";
     }else{
         echo " <script>
         alert('data gagal ditambah');
-        document.location.href = 'team.php';
+        document.location.href = 'binatang.php';
         </script>
     ";
 
@@ -36,41 +36,35 @@ if(isset($_POST['submit'])){
 <div class="container">
   <div class="row">
     <div class="col-12 p-3 bg-white">
-        <h3>Tambah Team</h3>
+        <h3>Tambah Binatang</h3>
 
 
         <form method="post" enctype="multipart/form-data">
 
     <div class="mb-3">
-        <select class="form-select" name="id_jenis" required>
-            <option> Pilih Jenis Olahraga </option>
-            <?php foreach ($jenis as $jns) : ?>
-                <option value="<?= $jns['id_jenis'] ?>"><?= $jns['Jenis'] ?> </option>
+        <select class="form-select" name="id_kategori" required>
+            <option value=""> --Pilih Kategori Binatang --</option>
+            <?php foreach ($kategori as $jns) : ?>
+                <option value="<?= $jns['id_kategori'] ?>"><?= $jns['nama_kategori'] ?> </option>
             <?php endforeach; ?>
         </select>
     </div>
 
-    <div class="mb-3">
-        <select class="form-select" name="id_pemain" required>
-            <option> Pilih Pemain </option>
-            <?php foreach ($pemain as $pmn) : ?>
-                <option value="<?= $pmn['id_pemain'] ?>"><?= $pmn['nama'] ?> </option>
-            <?php endforeach; ?>
-        </select>
-    </div>
             <div class="mb-3">
-                <label class="form-label">Nama Team</label>
-                <input type="text" name="nama_team" class="form-control">
-            </div>
-            
-
-            <div class="mb-3">
-            <textarea class="form-control" name="keterangan_team" rows="3" placeholder="Keterangan Team"  required></textarea>
+                <label class="form-label">Nama Binatang</label>
+                <input type="text" name="nama_binatang" class="form-control">
             </div>
 
+
+            <label class="form-label">Keterangan Binatang</label>
             <div class="mb-3">
-            <label for="gambar">Gambar :</label>
-          <input type="file" name="gambar" id="gambar" required >
+            <textarea class="form-control" name="keterangan_binatang" rows="3"   required></textarea>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="gambar" class="form-label">Gambar Binatang</label>
+                <input type="file" name="gambar" class="form-control">
             </div>
 
             <a href="team.php" class="btn btn-success" >Kembali</a>
@@ -82,3 +76,9 @@ if(isset($_POST['submit'])){
 
 
 <?php require_once '../admin/footer.php';?>
+
+
+<script type="text/javascript">
+  $('.nav-link').removeClass('active');
+  $('.menu-binatang').addClass('active');
+</script>
