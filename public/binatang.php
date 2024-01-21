@@ -94,7 +94,7 @@ include_once "footer.php"
         $('#modal-img').attr('src','../img/' + $(this).data('img'));
         $('#modal-nama').html($(this).data('nama'));
         $('#modal-kategori').html($(this).data('kategori'));
-        $('#modal-keterangan').html('"<em>'+$(this).data('keterangan')+'</em>');
+        $('#modal-keterangan').html('"<em>'+$(this).data('keterangan')+'</em>"');
         $('#modalDetail').modal('show');
     });
   });
