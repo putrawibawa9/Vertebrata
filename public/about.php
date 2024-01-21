@@ -13,7 +13,7 @@ $binatang = query("SELECT * FROM binatang JOIN kategori ON binatang.id_kategori 
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="../img/badminton.jpg" width="100px" class="d-block w-100" alt="...">
+                            <img src="../img/fox.jpg" width="100px" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
                             <img src="../img/dog.jpg" class="d-block w-100" alt="...">

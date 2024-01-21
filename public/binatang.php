@@ -42,9 +42,9 @@ $nama_kategori = query("SELECT nama_kategori FROM kategori WHERE id_kategori = $
             <div class="row">
                 <div class="col-12 p-5">
                 <h1 class="display-4 mt-3 mb-5"> Kategori - <?= $nama_kategori['nama_kategori']?></h1>
-                <?php foreach($binatang as $row):?>
                 
                 <div class="row">
+                  <?php foreach($binatang as $row):?>
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body text-center">
