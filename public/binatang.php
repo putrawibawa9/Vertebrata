@@ -18,7 +18,7 @@ $nama_kategori = query("SELECT nama_kategori FROM kategori WHERE id_kategori = $
                     <img src="../img/fox.jpg" class="d-block w-100 h-70 object-fit-cover" alt="Gambar 1">
                 </div>
                 <div class="carousel-item h-100">
-                    <img src="../img/dog.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gambar 2">
+                    <img src="../img/dog1.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gambar 2">
                 </div>
                 <div class="carousel-item h-100">
                     <img src="../img/cow.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gambar 3">
