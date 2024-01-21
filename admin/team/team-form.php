@@ -84,7 +84,7 @@
             </div>
 
 
-            <a href="team.php" class="btn btn-success" >Kembali</a>
+            <a href="binatang.php" class="btn btn-success" >Kembali</a>
             <button type="submit" class="btn btn-primary" name="submit" >Simpan</button>
         </form>
     </div>

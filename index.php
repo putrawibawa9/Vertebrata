@@ -75,13 +75,6 @@ if(isset($_POST['login'])){
                                 <div class="d-grid gap-2">
                                     <button class="btn btn-primary" type="login" name="login">Login</button>
                                 </div>
-
-                                <div>
-                                <a href="registrasi.php">Klik untuk buat akun</a>
-                                </div>
-                                <div>
-                                <a href="admin/login.php">Login untuk admin</a>
-                                </div>
                          </form>
                     </div>
                 </div> 

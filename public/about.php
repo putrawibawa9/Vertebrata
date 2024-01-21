@@ -1,4 +1,4 @@
- <?php
+<?php
 include_once "header.php";
 
 include_once "../functions/functions.php";
@@ -35,11 +35,17 @@ $binatang = query("SELECT * FROM binatang JOIN kategori ON binatang.id_kategori 
                     </div>
             </div>
 
-
-            <div class="col-12 p-5">
-                    <h1 class="display-4"> Home</h1>
-                    <p align="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam dolores harum atque perferendis molestiae voluptas id dolorem modi aliquid minus autem molestias, explicabo quam impedit hic possimus dolor assumenda quis magnam corporis at? Maiores cumque perspiciatis quibusdam dolorem dolore quidem enim saepe placeat deleniti corporis, dicta fugiat consectetur optio! Neque sunt inventore non distinctio, modi doloremque consectetur sit, numquam iusto ducimus aspernatur repellat unde, aliquid sapiente ea voluptas fuga animi temporibus minima illum atque nobis illo quae. Incidunt dolorem numquam hic, dicta nobis distinctio vero nam sit voluptas laborum temporibus ipsum ducimus eum id blanditiis labore dolores rerum ea corporis!</p>
+            <div class="row">
+                <div class="col-12 p-5">
+                    <h1 class="display-4"> About</h1>
+                    <p align="justify">Putra Wibawa</p>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                      
+                    </div>
+                </div>
+            </div>
               
 <?php
 include_once "footer.php"
@@ -47,5 +53,5 @@ include_once "footer.php"
 
 <script type="text/javascript">
   $('.nav-link').removeClass('active');
-  $('.menu-home').addClass('active');
+  $('.menu-about').addClass('active');
 </script>

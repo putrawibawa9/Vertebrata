@@ -30,7 +30,7 @@
             <div class="mb-3">
                 <input type="text" name="nama_kategori" placeholder="Jenis Hewan" class="form-control" required>
             </div>
-            <a href="jenis.php" class="btn btn-success" >Kembali</a>
+            <a href="kategori.php" class="btn btn-success" >Kembali</a>
             <button type="submit" class="btn btn-primary" name="submit" >Simpan</button>
         </form>
     </div>
