@@ -11,32 +11,29 @@ $binatang = query("SELECT * FROM binatang JOIN kategori ON binatang.id_kategori 
 $nama_kategori = query("SELECT nama_kategori FROM kategori WHERE id_kategori = $kategori")[0];
 
 ?>
-         <div class="row p p-5">
-                <div class="col-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../img/badminton.jpg" width="100px" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/dog.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../img/cat.jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-
-                    </div>
+      <div class="w-100 vh-100" id="home">
+        <div id="carouselExample" class="carousel slide carousel-fade h-100">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item h-100 active">
+                    <img src="../img/fox.jpg" class="d-block w-100 h-70 object-fit-cover" alt="Gambar 1">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="../img/dog.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gambar 2">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="../img/cow.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gambar 3">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
 
             <div class="row">
