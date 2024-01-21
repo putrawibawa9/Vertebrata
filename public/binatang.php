@@ -5,8 +5,6 @@ include_once "../functions/functions.php";
 
 $binatang = query("SELECT * FROM binatang JOIN kategori ON binatang.id_kategori = kategori.id_kategori");
 
-var_dump($binatang);
-
 
 ?>
          <div class="row p p-5">
